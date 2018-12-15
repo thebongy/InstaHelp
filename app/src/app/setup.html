@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Inline Labels</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-list>
+  
+      <ion-item>
+        <ion-label>Name</ion-label>
+        <ion-input type="text" value=""></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Phone Number</ion-label>
+        <ion-input type="numbers" value=""></ion-input>
+      </ion-item>
+      <ion-item>
+            <ion-label>BLOOD GROUP</ion-label>
+            <ion-select [(ngModel)]="bg">
+              <ion-option value="A+">A+</ion-option>
+              <ion-option value="B+">B+</ion-option>
+              <ion-option value="AB+">AB+</ion-option>
+              <ion-option value="O+">O+</ion-option>
+              <ion-option value="A-">A-</ion-option>
+              <ion-option value="B-">B-</ion-option>
+              <ion-option value="AB-">AB-</ion-option>
+              <ion-option value="O-">O-</ion-option>
+              <ion-option value="Mutated">Mutated</ion-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+                <ion-label>Date</ion-label>
+                <ion-datetime displayFormat="MM/YYYY" pickerFormat="MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+              </ion-item>
+        
+
+      <ion-content padding>
+        <p>
+          <button ion-button>Save Info</button>
+        </p>
+      
+       
+      </ion-content>
+  
+    </ion-list>
+  
+    <div padding>
+      <button ion-button color="primary" block>Sign In</button>
+    </div>
+  
+  </ion-content>

@@ -1,0 +1,34 @@
+<!--
+  Generated template for the MainPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>main</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+        <button ion-button color="danger" round large (click)="presentPopover($event)" button>CALL!!!</button>
+
+<ion-card>
+
+  <ion-card-header>
+      Nearest Hospital
+    </ion-card-header>
+  
+    <ion-card-content (click)="presentPopover($event)">
+      CDMM Hospital, VIT University, Vellore, 632014
+      Contact : 3423434324
+      Distance : 5 kms
+      Your location : N Block, Men's Hostel, VIT University
+      Latitude : 12.9721° N, Longitude : 79.1596° E 
+  </ion-card-content>
+ 
+  
+  </ion-card>
+</ion-content>
