@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css')}}">
+    <title>InstaHelp</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">InstaHelp</a>
+            {% if g.user %}
+            <a href="/logout" class="btn btn-primary">Logout</a>
+            {% endif %}
+    </nav>
+              
+    <div class="container">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+</body>
+</html>

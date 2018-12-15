@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<img width="80px" src="{{ url_for('static', filename='InstaHelp.png') }}" alt="" id="id">
+<h1>Register: </h1>
+<hr />
+<form method="post">
+        <div class="form-group">
+          <label for="username">Hospital Name</label>
+          <input type="text" name="name" class="form-control" id="username" placeholder="Enter the name of the hospital">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="location">Hospital Adress</label>
+            <textarea name="location" class="form-control" id="location" placeholder="Enter the adress of the hospital"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
